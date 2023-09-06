@@ -14,6 +14,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  background-image: url(descarga.jpg);
+}
+
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;

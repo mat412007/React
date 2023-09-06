@@ -4,6 +4,7 @@ function App() {
   
   return (
     <>
+    <div id="cambio">
       <button><a href="/random">Random</a></button>
       <button><a href="/clock">Reloj</a></button>
       <button><a href="/stopwatch">Cronometro</a></button>
@@ -19,7 +20,8 @@ function App() {
       <button><a href="/toggle">Render condicional</a></button>
       <button><a href="/countdown">Cuenta regresiva</a></button>
       <button><a href="/unform">Un formulario</a></button>
-      <button><a href="/navbar">Navbar</a></button>
+      <button><a href="/navbar">Navbar</a></button>        
+    </div>
     </>
   )
 }
