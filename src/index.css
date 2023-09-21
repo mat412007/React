@@ -15,7 +15,8 @@
 }
 
 body {
-  background-image: url(descarga.jpg);
+  background-image: url(C:\Users\Dell\Desktop\MatiasAppaz\Programacion\React\src\Imagenes\Fenix.jpg);
+  background-size: 100%;
 }
 
 table, th, td {
