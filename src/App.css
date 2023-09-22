@@ -2,6 +2,22 @@
   color: rgb(255, 89, 0);
 }
 
+#Tabla *{
+  width: 1000px;
+  height: 50px;
+  color: aqua;
+  border-color: aquamarine;
+  border-width: 3px;
+}
+
+.Lista-de-Equipos{
+  font-size: large;
+}
+
+.pokemon-card{
+  background-color: whitesmoke;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -57,3 +73,8 @@
 #cambio a{
   color: red;
 }
+
+.ColorDeTexto *{
+  color: aqua;
+}
+

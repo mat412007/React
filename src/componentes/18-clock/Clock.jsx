@@ -19,13 +19,15 @@ function Clock() {
     
     return (
         <>
-        <h1>
-            {fecha.getHours().toString().padStart(2,0)}:
-            {fecha.getMinutes().toString().padStart(2,0)}:
-            {fecha.getSeconds().toString().padStart(2,0)}
-        
-        </h1>
-        <h3>{fecha.toLocaleDateString('es-AR')}</h3>
+            <div className='ColorDeTexto'>
+                <h1>
+                    {fecha.getHours().toString().padStart(2,0)}:
+                    {fecha.getMinutes().toString().padStart(2,0)}:
+                    {fecha.getSeconds().toString().padStart(2,0)}
+                
+                </h1>
+                <h3>{fecha.toLocaleDateString('es-AR')}</h3>    
+            </div>
         </>
     )
 }  

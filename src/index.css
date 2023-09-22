@@ -58,6 +58,9 @@ table, th, td {
   align-items: center;
 }
 
+.Barra-de-Busqueda{
+  font-size: larger;
+}
 
 .task-list button {
   /* font-size: 10px; */

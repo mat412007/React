@@ -11,7 +11,9 @@ const Toggle = props => {
       <button onClick={handleClick}>
         {show ? 'Ocultar' : 'Mostrar'}
       </button>
-      {show && <h1>Alguna cosa que se puede ocultar</h1>}
+      <div className='ColorDeTexto'>
+        {show && <h1>Alguna cosa que se puede ocultar</h1>}
+      </div>
     </>
   );
 };

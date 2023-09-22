@@ -1,10 +1,12 @@
+import '../../App.css';
+
 function Tabla(props) {
   const { datos } = props; 
   const encabezados = Object.keys(datos[0]);
   console.log(encabezados);
 
   return (
-    <table>
+    <table id='Tabla'>
       <thead>
         <tr>
           {encabezados.map(i => <th key={i}>{i}</th>)}  

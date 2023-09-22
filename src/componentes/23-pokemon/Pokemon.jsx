@@ -59,7 +59,6 @@ function Pokemon(props) {
         type="text"  
       />
       <div className="pokemon-card">
-      
       <h1>{pokemonInfo.name}</h1>
       <p>id: {pokemonInfo.id}</p>
       <img src={pokemonInfo.img} />  

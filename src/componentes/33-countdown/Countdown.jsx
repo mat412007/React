@@ -25,11 +25,18 @@ function Countdown(props) {
     }, 1000);
     return () => clearInterval(id);
   }, [time]);
+
+  function handleClick(){
+    setTime(10);
+  }
   
   return (
     <>
-      <h1>{time}</h1>
-      {!time && <h2>Cero!</h2>}
+      <div className='ColorDeTexto'>
+        <h1>{time}</h1>
+        {!time && <h2>Cero!</h2>}
+      </div>
+      <button onClick={handleClick}>Reiniciar</button>
     </>
   );
 }

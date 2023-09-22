@@ -1,4 +1,18 @@
 import { useState } from 'react';
+import '../../App.css';
+
+function Tarea(props) {
+
+  return (
+    <li className="tarea">
+      <input className="cuadradito" type="checkbox" />
+      <label>{props.texto}</label>
+      <button onClick={props.deleteTarea}>
+        <i className='fa-solid fa-trash'></i>
+      </button>
+    </li>
+  );
+}
 
 const Todos = props => {
   
@@ -25,36 +39,25 @@ const Todos = props => {
 
   return (
     <>
+    <div className='ColorDeTexto'>
       <h1>Lista de tareas</h1>
       <form className="newTask" onSubmit={handleSubmit}>
         <input  
           type="text" 
           value={nuevaTarea}
           onChange={handleChange}
+          className='Barra-de-Busqueda'
         />
-        <input type="submit" value="Guardar" />
+        <input type="submit" value="Guardar" style={{backgroundColor:'blue'}}/>
       </form>
       <ul className="task-list">
         {tareas.map(tarea => <Tarea deleteTarea={deleteTarea} texto={tarea} />)}
-      </ul>
+      </ul>    
+    </div>
     </>
   );
 
 };
 
-function Tarea(props) {
-
-
-
-  return (
-    <li className="tarea">
-      <input className="cuadradito" type="checkbox" />
-      <label>{props.texto}</label>
-      <button onClick={props.deleteTarea}>
-        <i className='fa-solid fa-trash'></i>
-      </button>
-    </li>
-  );
-}
 
 export default Todos;

@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import '../../App.css';
 
 function Navbar(props) {
   console.log(props.links);
@@ -6,7 +7,7 @@ function Navbar(props) {
     alert('ya cargue el componente!');
   }, []);
   return (
-    <nav>
+    <nav className='ColorDeTexto'>
       <h2>Barra de navegacion</h2>
       <ul>
         {props.links.map((link, i) => {

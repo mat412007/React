@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import questions from './questions';
+import '../../App.css';
 
 const Trivia = props => {
 
@@ -44,8 +45,10 @@ const Game = props => {
   };
   return (
     <>
-      <h2>{count}/{questions.length}</h2>
-      <h1>{questions[idx].question}</h1>
+      <div className='ColorDeTexto'>
+        <h2>{count}/{questions.length}</h2>
+        <h1>{questions[idx].question}</h1>
+      </div>
       {questions[idx].answers.map(a => <button className="choice" key={a} onClick={handleClick}>{a}</button>)}
     </>
   );
@@ -57,8 +60,10 @@ const GameOver = props => {
   
   return (
     <>
+    <div className='ColorDeTexto'>
       <h1>Le pegaste a {count} de {questions.length}</h1>
       <h2>{count < 4 ? 'Sos malo' : count < 10 ? 'Sos masomenos' : 'Sos un genio'} </h2>
+    </div>
       <button onClick={restartGame}>Volver a jugar</button>
     </>
   );
@@ -68,7 +73,9 @@ const Start = props => {
   const { setPlaying } = props;
   return (
     <>
-      <h1>Trivia</h1>
+      <div className='ColorDeTexto'>
+        <h1>Trivia</h1>
+      </div>
       <button onClick={() => setPlaying(true)}>Jugar</button>
     </>
   );

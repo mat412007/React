@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import '../../App.css';
 
 function Futbol(props) {
   const equipos = [
@@ -37,15 +38,17 @@ function Futbol(props) {
 
   return (
     <>
-      <h2>Filtrá usando este input</h2>
-      <input 
-        type="text"
-        value={busqueda}
-        onChange={handleChange}
-      />
-      <ul>
-        {lista.map(equipo => <li key={equipo}>{equipo}</li>)}
-      </ul>
+      <div className='ColorDeTexto'>
+        <h2>Filtrá usando este input</h2>
+          <input 
+            type="text"
+            value={busqueda}
+            onChange={handleChange}
+          />
+          <ul className='Lista-de-Equipos'>
+            {lista.map(equipo => <li key={equipo}>{equipo}</li>)}
+          </ul>
+      </div>
     </>
   );
 }

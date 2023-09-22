@@ -1,3 +1,5 @@
+import '../../App.css';
+
 import { useState } from 'react';
 function Galeria() {
   const [url, setUrl] = useState('https://source.unsplash.com/random?landscape');
@@ -7,15 +9,16 @@ function Galeria() {
     setUrl('https://source.unsplash.com/random?'+event.target.value);
   }   
   const style = { 
-    width: '100px',
-    height: '100px',
+    width: '200px',
+    height: '200px',
     objectFit: 'cover' 
   };
   return (
     <>
+    <div className='ColorDeTexto'>
       <h1>Galeria</h1>
-      <input onChange={handleChange} value={busqueda} placeholder="fotos de que queres?" type="text" />
-      <div className="galeria">  
+      <input onChange={handleChange} value={busqueda} placeholder="¿Qué tipo de fotos querés?" type="text" style={{fontSize: 'large', width: '220px'}}/>
+      <div className="galeria" style={{width:'2000px'}}>  
         <img style={style} src={url+'&1'} />
         <img style={style} src={url+'&2'} />
         <img style={style} src={url+'&3'} />
@@ -23,6 +26,7 @@ function Galeria() {
         <img style={style} src={url+'&5'} />
         <img style={style} src={url+'&6'} />
       </div>
+    </div>
     </>
   );
 }

@@ -26,8 +26,8 @@ const questions = [
   {
     id: 5,
     question: '5 * 5',
-    answers: ['50','125','100','40'],
-    correct: '125'
+    answers: ['50','25','100','40'],
+    correct: '25'
   },
   {
     id: 6,

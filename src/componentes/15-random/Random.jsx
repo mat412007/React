@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 function Random(props) {
   
-  const [number, setNumber] = useState(1);
+  const [number, setNumber] = useState(0);
 
   function generateNumbersAtRandom() {
     const random = Math.floor(Math.random() * 1000) + 1;
@@ -10,7 +10,7 @@ function Random(props) {
   }  
 
   return (
-    <h1 onClick={generateNumbersAtRandom}>{number}</h1>
+    <h1 className='ColorDeTexto' onClick={generateNumbersAtRandom}>{number}</h1>
   );  
 }
 
