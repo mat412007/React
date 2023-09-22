@@ -17,6 +17,7 @@ import Toggle from './componentes/32-render-condicional/Toggle';
 import Countdown from './componentes/33-countdown/Countdown';
 import Unform from './componentes/42-unform/Unform';
 import Navbar from './componentes/14-navbar/Navbar';
+import RelojCronometro from './componentes/20-reloj-cronometro/Reloj-Cronometro'
 import datos from './datos';
 import './index.css';
 
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />
+  },
+  {
+    path: '/relojcronometro',
+    element: <RelojCronometro />
   },
   {
     path: '/clock',

@@ -18,18 +18,18 @@ function Stopwatch() {
   const m = Math.floor(time / 6000) % 60;
   return (
     <>
-      <div>
+      <div className='ColorDeTexto'>
         <h1>Cronómetro</h1>
-        <button onClick={toggleTimer}>
-          {timer ? 'Stop' : 'Start'}
-        </button>
-        <button onClick={() => setTime(0)}>Reset</button>
         <h1>
           {m.toString().padStart(2,0)}:
           {s.toString().padStart(2,0)}:
           {cs.toString().padStart(2,0)}
         </h1>
       </div>
+      <button onClick={toggleTimer}>
+          {timer ? 'Stop' : 'Start'}
+      </button>
+      <button onClick={() => setTime(0)}>Reset</button>
     </>
   )
 }
