@@ -36,7 +36,7 @@ function Unform(props) {
   return (
     <form className="unform" onSubmit={handleSubmit}>
       <div className='ColorDeTexto'>
-        <h1>Un formulario</h1>
+        <h1 style={{marginBottom: '30px'}}>Un formulario</h1>
       </div>
       <input 
         value={user} 

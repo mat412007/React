@@ -15,7 +15,7 @@ function App() {
       <button><a href="/pokemon">Pokemon</a></button>
       <button><a href="/todos">Tareas</a></button>
       {/*<button><a href="/blog">Blog</a></button>*/}
-      {/*<button><a href="/ciphers">Cifrado</a></button>*/}
+      <button><a href="/ciphers">Cifrado</a></button>
       <button><a href="/trivia">Trivia</a></button>
       <button><a href="/contador">Contador</a></button>
       <button><a href="/galeria">Galeria</a></button>
@@ -23,6 +23,7 @@ function App() {
       <button><a href="/countdown">Cuenta regresiva</a></button>
       <button><a href="/unform">Un formulario</a></button> 
       <button><a href="/relojcronometro">Reloj y Cronómetro</a></button>  
+      <button><a href="/feriado">Próximo feriado</a></button>
     </div>
     </>
   )

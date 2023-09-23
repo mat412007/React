@@ -8,6 +8,7 @@
   color: aqua;
   border-color: aquamarine;
   border-width: 3px;
+  background-color: black;
 }
 
 .Lista-de-Equipos{
@@ -74,7 +75,7 @@
   color: red;
 }
 
-.ColorDeTexto *{
+.ColorDeTexto{
   color: aqua;
 }
 

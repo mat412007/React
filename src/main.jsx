@@ -9,7 +9,7 @@ import Futbol from './componentes/22-futbol/Futbol';
 import Pokemon from './componentes/23-pokemon/Pokemon';
 import Todos from './componentes/25-todos/Todos';
 import Galeria from './componentes/26-unsplash/Galeria';
-import Blog from './componentes/27-blog/Blog';
+import Feriado from './componentes/24-feriado/Feriado'
 import Ciphers from './componentes/28-ciphers/Ciphers';
 import Trivia from './componentes/29-trivia/Trivia';
 import Contador from './componentes/31-contador/Contador';
@@ -46,6 +46,10 @@ const router = createBrowserRouter([
     element: <Clock />
   },
   {
+    path: '/feriado',
+    element: <Feriado />
+  },
+  {
     path: '/stopwatch',
     element: <Stopwatch />
   },
@@ -68,10 +72,6 @@ const router = createBrowserRouter([
   {
     path: '/todos',
     element: <Todos />
-  },
-  {
-    path: '/blog',
-    element: <Blog />
   },
   {
     path: '/ciphers',

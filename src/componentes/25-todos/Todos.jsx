@@ -7,7 +7,7 @@ function Tarea(props) {
     <li className="tarea">
       <input className="cuadradito" type="checkbox" />
       <label>{props.texto}</label>
-      <button onClick={props.deleteTarea}>
+      <button onClick={props.deleteTarea} style={{color: 'aqua' , marginLeft: '15px'}}>
         <i className='fa-solid fa-trash'></i>
       </button>
     </li>
@@ -39,8 +39,8 @@ const Todos = props => {
 
   return (
     <>
-    <div className='ColorDeTexto'>
-      <h1>Lista de tareas</h1>
+    <div>
+      <h1 className='ColorDeTexto'>Lista de tareas</h1>
       <form className="newTask" onSubmit={handleSubmit}>
         <input  
           type="text" 
@@ -48,9 +48,9 @@ const Todos = props => {
           onChange={handleChange}
           className='Barra-de-Busqueda'
         />
-        <input type="submit" value="Guardar" style={{backgroundColor:'blue'}}/>
+        <input type="submit" value="Guardar"/>
       </form>
-      <ul className="task-list">
+      <ul className="task-list" style={{color: 'aqua'}}>
         {tareas.map(tarea => <Tarea deleteTarea={deleteTarea} texto={tarea} />)}
       </ul>    
     </div>
