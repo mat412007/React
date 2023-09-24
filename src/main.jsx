@@ -18,6 +18,8 @@ import Toggle from './componentes/32-render-condicional/Toggle';
 import Countdown from './componentes/33-countdown/Countdown';
 import Unform from './componentes/42-unform/Unform';
 import Navbar from './componentes/14-navbar/Navbar';
+import Product from './componentes/16-producto/Product.jsx'
+import ProductList from './componentes/17-lista-de-productos/ProductList.jsx'
 import RelojCronometro from './componentes/20-reloj-cronometro/Reloj-Cronometro'
 import datos from './datos';
 import './index.css';
@@ -46,6 +48,14 @@ const router = createBrowserRouter([
   {
     path: '/header',
     element: <Header texto={encabezado.texto} imagen={encabezado.imagen} />
+  },
+  {
+    path: '/product',
+    element: <Product />
+  },
+  {
+    path: '/productlist',
+    element: <ProductList />
   },
   {
     path: '/relojcronometro',

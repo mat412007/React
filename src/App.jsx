@@ -7,6 +7,8 @@ function App() {
     <h1 className='Titulo-centrado'><a href="https://la35.net/assets/files/practicas/proyecto-p5.pdf" target='_blank'><u>Formulario</u></a></h1>
     <div id="cambio">
       <button><a href="/header">Encabezado</a></button>
+      <button><a href="/product">Producto</a></button>
+      <button><a href="/productlist">Lista de productos</a></button>
       <button><a href="/navbar">Navbar</a></button>
       <button><a href="/random">Random</a></button>
       <button><a href="/clock">Reloj</a></button>
