@@ -1,9 +1,21 @@
 import { useState } from 'react'
 import '../../App.css'
 
+const styles = {
+  width: '100px',
+  display: 'flex-box',
+  marginLeft: '20px',
+  marginRight: '20px',
+  marginBottom: '50px',
+  backgroundColor: 'black',
+  borderColor: 'red',
+  color: 'red'
+};
+
 function Stopwatch() {
   const [timer, setTimer] = useState(undefined)
   const [time, setTime] = useState(0)
+
   const toggleTimer = () => {
     if (timer) {
       clearInterval(timer);
@@ -26,10 +38,10 @@ function Stopwatch() {
           {cs.toString().padStart(2,0)}
         </h1>
       </div>
-      <button onClick={toggleTimer}>
+      <button onClick={toggleTimer} style={styles}>
           {timer ? 'Stop' : 'Start'}
       </button>
-      <button onClick={() => setTime(0)}>Reset</button>
+      <button onClick={() => setTime(0)} style={styles}>Reset</button>
     </>
   )
 }

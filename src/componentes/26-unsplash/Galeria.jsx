@@ -18,7 +18,7 @@ function Galeria() {
     <div className='ColorDeTexto'>
       <h1>Galeria</h1>
       <input onChange={handleChange} value={busqueda} placeholder="¿Qué tipo de fotos querés?" type="text" style={{fontSize: 'large', width: '220px'}}/>
-      <div className="galeria" style={{width:'2000px'}}>  
+      <div className="galeria" style={{width:'100%'}}>  
         <img style={style} src={url+'&1'} />
         <img style={style} src={url+'&2'} />
         <img style={style} src={url+'&3'} />

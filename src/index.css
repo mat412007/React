@@ -70,13 +70,14 @@ table, th, td {
 }
 
 .pokemon-card {
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 5%;
   width: 300px;
   height: 400px;
   margin: 10px;
   padding: 5px;
   box-shadow: 3px 3px gray;
+  color: black;
 }
 
 .pokemon-card h1 {

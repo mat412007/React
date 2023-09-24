@@ -8,7 +8,7 @@ const Toggle = props => {
   };  
   return (
     <>
-      <button onClick={handleClick}>
+      <button onClick={handleClick} className='Botones'>
         {show ? 'Ocultar' : 'Mostrar'}
       </button>
       <div className='ColorDeTexto'>

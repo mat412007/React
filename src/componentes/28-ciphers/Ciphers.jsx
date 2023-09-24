@@ -15,8 +15,8 @@ function Ciphers() {
         {/* Cuando quiero poner lo que escribre una persona adentro de un input puedo detectar
         cada vez que escribe con el evento 'onChange' y de ese evento agarrar el 'e' y del 'e' acceder
         al 'e.target.value' que es lo que tiene la persona escrito en ese input y asignarlo a una variable */}
-        <input type="text" placeholder='Frase' onChange={(e) => {setPalabraNormal(e.target.value)}}/>
-        <select onChange={(e) => setOpcionSeleccionada(e.target.value)}>
+        <input style={{marginRight: '15px'}} type="text" placeholder='Frase' onChange={(e) => {setPalabraNormal(e.target.value)}}/>
+        <select style={{fontSize: '14px'}} onChange={(e) => setOpcionSeleccionada(e.target.value)}>
             <option value="cesar">Cifrado del desplazamiento</option>
             <option value="rotacion">Cifrado de rotación</option>
             <option value="morse">Morse</option>
@@ -29,8 +29,9 @@ function Ciphers() {
                     placeholder="Desplazamiento"
                     value={desplazamiento}
                     onChange={(e) => {setDesplazamiento(e.target.value)}}
+                    style={{marginTop: '20px'}}
                     />
-                    <p className="ColorDeTexto" style={{fontSize: '22px'}}>Resultado: {encrypt(palabraNormal, desplazamiento)}</p>
+                    <p className="ColorDeTexto" style={{fontSize: '25px'}}>Resultado: {encrypt(palabraNormal, desplazamiento)}</p>
                 </div>
             )
         }
@@ -38,13 +39,13 @@ function Ciphers() {
             opcionSeleccionada === 'rotacion' && (
                 <div className="ColorDeTexto">
                     {/*"hola" -> "h" "o" "l" "a" -> "a" "l" "o" "h" -> "aloh" */}
-                    <p style={{fontSize: '22px'}}>Resultado: {palabraNormal.split('').reverse().join('')}</p>
+                    <p style={{fontSize: '25px'}}>Resultado: {palabraNormal.split('').reverse().join('')}</p>
                 </div>
             )
         }
         {
             opcionSeleccionada === 'morse' && (
-                <p className="ColorDeTexto" style={{fontSize: '22px'}}>Resultado: {morsify.encode(palabraNormal)}</p>
+                <p className="ColorDeTexto" style={{fontSize: '25px'}}>Resultado: {morsify.encode(palabraNormal)}</p>
             )
         }
     </div>

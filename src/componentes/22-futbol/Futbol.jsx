@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import '../../App.css';
 
-function Futbol(props) {
+function Futbol() {
   const equipos = [
     'Newells', 
     'Independiente',
@@ -20,8 +20,6 @@ function Futbol(props) {
 
   const [busqueda, setBusqueda] = useState('');
   const [lista, setLista] = useState(equipos);
-  
-  
   
   const handleChange = e => {
     // console.log(e.target);
@@ -44,6 +42,7 @@ function Futbol(props) {
             type="text"
             value={busqueda}
             onChange={handleChange}
+            style={{fontSize: '18px'}}
           />
           <ul className='Lista-de-Equipos'>
             {lista.map(equipo => <li key={equipo}>{equipo}</li>)}

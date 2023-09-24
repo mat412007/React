@@ -26,10 +26,10 @@ function Stopwatch2() {
           {cs.toString().padStart(2,0)}
         </h1>
       </div>
-      <button onClick={toggleTimer}>
+      <button className='Botones' onClick={toggleTimer}>
           {timer ? 'Stop' : 'Start'}
       </button>
-      <button onClick={() => setTime(0)}>Reset</button>
+      <button className='Botones' onClick={() => setTime(0)}>Reset</button>
     </>
   )
 } 
@@ -71,7 +71,7 @@ function RelojCronometro() {
 
     return(
         <div>
-            <button onClick={() => setVistaTiempo(!vistaTiempo)}>{vistaTiempo === true ? "Cronometro" : "Reloj"}</button>
+            <button className='Botones' onClick={() => setVistaTiempo(!vistaTiempo)}>{vistaTiempo === true ? "Cronometro" : "Reloj"}</button>
             {vistaTiempo === true ? <Clock2 /> : <Stopwatch2 />}
         </div>
     )

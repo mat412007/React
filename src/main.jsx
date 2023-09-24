@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
+import Header from './componentes/13-encabezado/Encabezado'
 import Random from './componentes/15-random/Random'
 import Clock from './componentes/18-clock/Clock'
 import Stopwatch from './componentes/19-stopwatch/Stopwatch'
@@ -27,6 +28,11 @@ const links = [
   {name: 'Contact', url: 'contact.html'}
 ];
 
+const encabezado = {  
+  texto: 'Firefox es un navegador muy útil y conocido. Es gratis, por lo que cualquiera puede instalarlo, y te permite ver lo archivos en varios formatos sin la necesidad de instalar paquetes adicionales.',
+  imagen: 'src/Imagenes/Firefox.webp'
+}
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -36,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />
+  },
+  {
+    path: '/header',
+    element: <Header texto={encabezado.texto} imagen={encabezado.imagen} />
   },
   {
     path: '/relojcronometro',

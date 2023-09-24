@@ -16,7 +16,7 @@ function Contador(props) {
         <h2 cla>El ejemplo mas simple posible de <code>useState</code></h2>
         <h1>{clicks}</h1> 
       </div> 
-      <button onClick={handleClick}>Contar</button>
+      <button className='Botones' onClick={handleClick}>Contar</button>
     </>
   );  
 }

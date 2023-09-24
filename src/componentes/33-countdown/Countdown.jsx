@@ -36,7 +36,7 @@ function Countdown(props) {
         <h1>{time}</h1>
         {!time && <h2>Cero!</h2>}
       </div>
-      <button onClick={handleClick}>Reiniciar</button>
+      <button className='Botones' onClick={handleClick}>Reiniciar</button>
     </>
   );
 }

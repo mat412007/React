@@ -31,6 +31,7 @@ function Unform(props) {
 
   const style = {
     fontSize: 'medium',
+    color: 'black'
   };
 
   return (

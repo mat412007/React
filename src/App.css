@@ -79,3 +79,11 @@
   color: aqua;
 }
 
+.Botones{
+  width: 150px;
+  display: flex-box;
+  margin-bottom: 20px;
+  background-color: black;
+  border-color: red;
+  color: red;
+}

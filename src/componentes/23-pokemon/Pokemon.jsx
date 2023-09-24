@@ -1,8 +1,7 @@
-const url = 'https://pokeapi.co/api/v2/pokemon/?limit=151';
 import { useState, useEffect } from 'react';
+import '../../index.css';
 
-function Pokemon(props) {
-
+function Pokemon() {
 
     useEffect(() => {
         fetch(url)
@@ -21,10 +20,8 @@ function Pokemon(props) {
       id: 25,
       img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/25.svg'
   });
+  const url = 'https://pokeapi.co/api/v2/pokemon/?limit=151';
 
-
-  
-    
 
   function handleChange(e) {
     setPokemon(e.target.value);
@@ -53,16 +50,18 @@ function Pokemon(props) {
 
   return (
     <>
+      <h1 style={{color: 'aquamarine'}}><u>Pokemon</u></h1>
       <input
         onChange={handleChange} 
         value={pokemon} 
-        type="text"  
+        type="text" 
+        style={{fontSize: '18px'}} 
       />
       <div className="pokemon-card">
-      <h1>{pokemonInfo.name}</h1>
-      <p>id: {pokemonInfo.id}</p>
-      <img src={pokemonInfo.img} />  
-    </div>
+        <h1>{pokemonInfo.name}</h1>
+        <p style={{fontSize: '20px'}}>id: {pokemonInfo.id}</p>
+        <img src={pokemonInfo.img} />  
+      </div>
     </>
     
   ); 

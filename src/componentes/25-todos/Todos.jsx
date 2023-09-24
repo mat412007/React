@@ -48,7 +48,7 @@ const Todos = props => {
           onChange={handleChange}
           className='Barra-de-Busqueda'
         />
-        <input type="submit" value="Guardar"/>
+        <input type="submit" value="Guardar" style={{fontSize: '15px', color: 'black'}}/>
       </form>
       <ul className="task-list" style={{color: 'aqua'}}>
         {tareas.map(tarea => <Tarea deleteTarea={deleteTarea} texto={tarea} />)}

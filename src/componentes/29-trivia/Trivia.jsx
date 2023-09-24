@@ -49,7 +49,7 @@ const Game = props => {
         <h2>{count}/{questions.length}</h2>
         <h1>{questions[idx].question}</h1>
       </div>
-      {questions[idx].answers.map(a => <button className="choice" key={a} onClick={handleClick}>{a}</button>)}
+      {questions[idx].answers.map(a => <button className="choice Botones" key={a} onClick={handleClick}>{a}</button>)}
     </>
   );
 };
@@ -64,7 +64,7 @@ const GameOver = props => {
       <h1>Le pegaste a {count} de {questions.length}</h1>
       <h2>{count < 4 ? 'Sos malo' : count < 10 ? 'Sos masomenos' : 'Sos un genio'} </h2>
     </div>
-      <button onClick={restartGame}>Volver a jugar</button>
+      <button className='Botones' onClick={restartGame}>Volver a jugar</button>
     </>
   );
 };
@@ -76,7 +76,7 @@ const Start = props => {
       <div className='ColorDeTexto'>
         <h1>Trivia</h1>
       </div>
-      <button onClick={() => setPlaying(true)}>Jugar</button>
+      <button className='Botones' onClick={() => setPlaying(true)}>Jugar</button>
     </>
   );
 };
