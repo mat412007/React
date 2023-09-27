@@ -1,3 +1,8 @@
+.Lista{
+  color: red;
+  font-size: 30px;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
