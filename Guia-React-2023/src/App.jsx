@@ -6,27 +6,27 @@ function App() {
     <>
     <h1 className='Titulo-centrado'><a href="https://la35.net/assets/files/practicas/proyecto-p5.pdf" target='_blank'><u>Formulario</u></a></h1>
     <div id="cambio">
-      <button><a href="/header">Encabezado</a></button>
-      <button><a href="/product">Producto</a></button>
-      <button><a href="/productlist">Lista de productos</a></button>
-      <button><a href="/navbar">Navbar</a></button>
-      <button><a href="/random">Random</a></button>
-      <button><a href="/clock">Reloj</a></button>
-      <button><a href="/stopwatch">Cronómetro</a></button>
-      <button><a href="/tabla">Tabla</a></button>
-      <button><a href="/futbol">Fútbol</a></button>
-      <button><a href="/pokemon">Pokemon</a></button>
-      <button><a href="/todos">Tareas</a></button>
+      <a href="/header"><button>Encabezado</button></a>
+      <a href="/product"><button>Producto</button></a>
+      <a href="/productlist"><button>Lista de productos</button></a>
+      <a href="/navbar"><button>Navbar</button></a>
+      <a href="/random"><button>Random</button></a>
+      <a href="/clock"><button>Reloj</button></a>
+      <a href="/stopwatch"><button>Cronómetro</button></a>
+      <a href="/tabla"><button>Tabla</button></a>
+      <a href="/futbol"><button>Fútbol</button></a>
+      <a href="/pokemon"><button>Pokemon</button></a>
+      <a href="/todos"><button>Tareas</button></a>
       {/*<button><a href="/blog">Blog</a></button>*/}
-      <button><a href="/ciphers">Cifrado</a></button>
-      <button><a href="/trivia">Trivia</a></button>
-      <button><a href="/contador">Contador</a></button>
-      <button><a href="/galeria">Galeria</a></button>
-      <button><a href="/toggle">Render condicional</a></button>
-      <button><a href="/countdown">Cuenta regresiva</a></button>
-      <button><a href="/unform">Un formulario</a></button> 
-      <button><a href="/relojcronometro">Reloj y Cronómetro</a></button>  
-      <button><a href="/feriado">Próximo feriado</a></button>
+      <a href="/ciphers"><button>Cifrado</button></a>
+      <a href="/trivia"><button>Trivia</button></a>
+      <a href="/contador"><button>Contador</button></a>
+      <a href="/galeria"><button>Galeria</button></a>
+      <a href="/toggle"><button>Render condicional</button></a>
+      <a href="/countdown"><button>Cuenta regresiva</button></a>
+      <a href="/unform"><button>Un formulario</button></a>
+      <a href="/relojcronometro"><button>Reloj y Cronómetro</button></a>
+      <a href="/feriado"><button>Próximo feriado</button></a>
     </div>
     </>
   )
